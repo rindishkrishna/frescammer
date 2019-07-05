@@ -1,5 +1,6 @@
 body,
 html {
+  background-color: black;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -16,6 +17,7 @@ html {
   overflow: hidden;
   color: white;
   font-size: 50px;
+  border-radius: 2px;
 }
 
 .openbtn {
@@ -69,7 +71,7 @@ html {
 }
 
 .slides > div{
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     font-size: 32px;
     color: white;
@@ -89,6 +91,12 @@ html {
     text-align: center;
 
 
+}
+
+.slides >div:hover{
+
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
 }
 .sidepanel  {
   color: white;
@@ -114,12 +122,12 @@ html {
   border: 1px black;
   text-decoration: none;
   display: block;
-  transition: 200ms ease-in;
+  transition: 150ms ease-in;
 }
 
 .sidepanel a:hover {
-  color: black;
-  background-color: blue;
+  color: red;
+  background-color: black;
 }
 
 .sidepanel .closebtn {
@@ -135,8 +143,14 @@ html {
     height: 50px;
     width: 50px;
     background: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: grey;
     border: 1px solid black;
+}
+
+.scroll_btn:hover{
+    color: white;
+    border: 2px solid white;
+
 }
 
 .display-left{
